@@ -119,6 +119,8 @@ footer p{
     margin-top: 20px;
 }
 #course{
+    flex-grow: 0.1;
+    flex-basis: auto;
     font-size: 1.5rem;
     height: 250px;
     width: 150px;
@@ -131,6 +133,7 @@ footer p{
     align-items: center;
     border-radius: 10px;
     text-align: center;
+    margin-top: 30px;
 }
 #course:hover{
     box-shadow: 5px -5px 15px black;
