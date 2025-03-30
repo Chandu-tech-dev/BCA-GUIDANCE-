@@ -1,4 +1,5 @@
 const notes=document.getElementById("btn");
+const web=document.getElementById("web")
 const students=document.getElementById("student");
 const viweers=document.getElementById("viweers");
 const suppoters=document.getElementById("supporters");
