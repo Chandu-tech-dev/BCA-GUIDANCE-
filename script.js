@@ -6,7 +6,7 @@ let student=0;
 let viwe=0;
 let supporter=0;
 notes.addEventListener("click",()=>{
-    open("notes.html")
+    open("notes.html");
 })
 
 document.addEventListener("scroll",()=>
@@ -50,4 +50,10 @@ function Suppoter(){
         clearInterval()
     }
 }
+
+const textarea=document.getElementById("textarea");
+const submit=document.getElementById("suggest");
+submit.addEventListener("click",()=>{
+   textarea.value="";
+})
 
