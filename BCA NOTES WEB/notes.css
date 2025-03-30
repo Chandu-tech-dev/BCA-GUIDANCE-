@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+#years{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    width: 200px;
+    background-color: hsl(87, 68%, 71%);
+    border: 1px soild black;
+    border-radius: 5px;
+}
+button:hover{
+    background-color:  hsl(87, 68%, 81%);
+    font-size: 1.7rem;
+}
+footer p{
+    font-size: 1.5rem;
+    background-color: hsla(0, 0%, 0%, 0.602);
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
