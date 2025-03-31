@@ -67,6 +67,13 @@ button:hover{
     text-decoration: underline;
     
 }
+#CF{
+    font-size: 1.3rem;
+}
+div #CF:hover{
+    font-size: 1.4rem;
+}
+
 footer p{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.659);

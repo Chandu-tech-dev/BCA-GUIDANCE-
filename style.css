@@ -39,8 +39,7 @@ main p{
 #check{
     font-size: 1.5rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     
 }
@@ -124,9 +123,10 @@ textarea{
 #suggest{
     position: absolute;
     right: 20px;
-    background-color: aqua;
+    background-color: rgba(0, 255, 149, 0.731);
     font-size: 1rem;
     color: black;
+    width: fit-content;
 }
 #suggest:active{
     background-color: hsl(180, 100%, 60%);
@@ -141,6 +141,19 @@ textarea{
     60%{
         color: rgb(0, 255, 13);
     }
+}
+#group{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(42, 93, 165);
+}
+span{
+    background-color: rgba(255, 255, 0, 0.369);
+}
+#Join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer p{
     font-size: 1.5rem;

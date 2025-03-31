@@ -1,4 +1,5 @@
 const notes=document.getElementById("btn");
+const sep=document.getElementById("sep-btn");
 const web=document.getElementById("web")
 const students=document.getElementById("student");
 const viweers=document.getElementById("viweers");
@@ -8,6 +9,9 @@ let viwe=0;
 let supporter=0;
 notes.addEventListener("click",()=>{
     open("notes.html");
+})
+sep.addEventListener("click",()=>{
+    open("sep.html")
 })
 
 document.addEventListener("scroll",()=>
