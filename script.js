@@ -14,48 +14,38 @@ sep.addEventListener("click",()=>{
     open("sep.html")
 })
 
-document.addEventListener("scroll",()=>
-
-{
-   setTimeout(() => {
-    setInterval(Student,100)
-    setInterval(View,100)
-    setInterval(Suppoter,100)
-   }, 2000);
-       
-       
-        
+let intervalsSet = false;
+document.addEventListener("scroll",()=>{
+    if (!intervalsSet) {
+        intervalsSet = true;
+        setTimeout(() => {
+            const studentInterval = setInterval(() => {
+                student++;
+                if (student > 500) {
+                    clearInterval(studentInterval);
+                } else {
+                    students.innerHTML = student + "k";
+                }
+            }, 50);
+            const viewInterval = setInterval(() => {
+                viwe++;
+                if (viwe > 600) {
+                    clearInterval(viewInterval);
+                } else {
+                    viweers.innerHTML = viwe + "k";
+                }
+            }, 50);
+            const supporterInterval = setInterval(() => {
+                supporter++;
+                if (supporter > 700) {
+                    clearInterval(supporterInterval);
+                } else {
+                    suppoters.innerHTML = supporter + "k";
+                }
+            }, 50);
+        }, 2000);
+    }
 });
-function Student(){
-    student++;
-    if (student>0 && student<501) {
-        document.getElementById("student").innerHTML=student+"k";
-    }
-
-
-
-}
-function View(){
-    viwe++;
-    if(viwe>0&&viwe<601)
-    {
-        viweers.innerHTML=viwe+"k";
-    }
-    else{
-        clearInterval()
-    }
-}
-function Suppoter(){
-    supporter++;
-    if(supporter>0&&supporter<701)
-    {
-        suppoters.innerHTML=supporter+"k";
-    }
-    else{
-        clearInterval()
-    }
-}
-
 const textarea=document.getElementById("textarea");
 const submit=document.getElementById("suggest");
 submit.addEventListener("click",()=>{
