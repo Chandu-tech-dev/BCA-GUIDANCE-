@@ -167,6 +167,7 @@ button:active {
 #counter {
     margin-top: 50px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -212,7 +213,8 @@ button:active {
 }
 
 #qoute {
-    margin-top: 50px;
+    margin:100px auto;
+    padding: 20px;
     line-height: 1.8;
     font-size: 1.8rem;
     margin-left: 75px;
@@ -464,19 +466,19 @@ footer p {
     }
 
     button {
-        width: 100%;
+        width: 70%;
         margin: 10px 0;
     }
 
     #counter,
     #name {
-        flex-direction: column;
+        flex-direction: row;
         font-size: 1.8rem;
         max-width: 100%;
     }
 
     #courses {
-        flex-direction: column;
+        flex-direction: row;
         margin: 10px;
     }
 
@@ -488,11 +490,12 @@ footer p {
     #about,
     #qoute,
     #websites {
-        margin: 10px;
+        margin: 50px;
         font-size: 1.4rem;
     }
 
     #aim {
+        margin-top: 50px;
         font-size: 2rem;
         padding: 10px;
     }
@@ -508,13 +511,8 @@ footer p {
         padding: 10px 0;
     }
 
-    #suggestion {
-        font-size: 1.2rem;
-    }
 
-    textarea {
-        font-size: 1rem;
-    }
+
 }
 
 @media (max-width: 480px) {
